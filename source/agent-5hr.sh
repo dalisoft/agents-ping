@@ -44,17 +44,6 @@ run_ping "Antigravity" \
   --mode plan \
   --print "$MESSAGE"
 
-# Codex trigger 5-hour
-run_ping "Codex" \
-  codex \
-  --model "gpt-5.6-luna" \
-  --sandbox "read-only" \
-  --ask-for-approval "never" \
-  --cd "$ACTIVE_DIR" \
-  exec --skip-git-repo-check \
-  --ephemeral \
-  "$MESSAGE"
-
 # Claude trigger 5-hour
 run_ping "Claude" \
   claude \
@@ -65,6 +54,17 @@ run_ping "Claude" \
   --tools "" \
   --no-session-persistence \
   --print "$MESSAGE"
+
+# Codex trigger 5-hour
+run_ping "Codex" \
+  codex \
+  --model "gpt-5.6-luna" \
+  --sandbox "read-only" \
+  --ask-for-approval "never" \
+  --cd "$ACTIVE_DIR" \
+  exec --skip-git-repo-check \
+  --ephemeral \
+  "$MESSAGE"
 
 # CommandCode trigger 5-hour
 run_ping "CommandCode" \
