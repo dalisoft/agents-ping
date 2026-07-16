@@ -9,7 +9,17 @@ Pings your AI Agents each hour to keep your 5-hour active all the time.
 - Simple, fast and easy
 - Call via `command` (safe)
 - No ban & block risk
-- Can be modified
+- Customizable (see `build/` folder)
+
+## Supported Agents
+
+Currently supports these agents
+
+- Antigravity
+- Claude Code
+- Codex
+- Command Code
+- OpenCode
 
 ## Installation
 
