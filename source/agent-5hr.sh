@@ -42,6 +42,7 @@ run_ping "Antigravity" \
   agy \
   --model 'Gemini 3.5 Flash (Low)' \
   --mode plan \
+  --add-dir "$ACTIVE_DIR" \
   --print "$MESSAGE"
 
 # Claude trigger 5-hour
