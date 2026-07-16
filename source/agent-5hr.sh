@@ -49,6 +49,7 @@ run_ping "Antigravity" \
 run_ping "Claude" \
   claude \
   --model "sonnet" \
+  --effort "low" \
   --permission-mode plan \
   --safe-mode \
   --no-chrome \
