@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.dalisoft.agent-pings</string>
+
+    <key>Program</key>
+    <string>/Users/%user%/.local/cron/%app_id%.sh</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/%user%/.local/cron/%app_id%.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/%user%/.local/cron</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>HOME</key>
+      <string>/Users/%user%</string>
+
+      <key>PATH</key>
+      <string>/Users/%user%/.bun/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <!-- Run at the top of every hour -->
+    <key>StartCalendarInterval</key>
+    <dict>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+
+    <!-- Also run immediately when loaded or after login -->
+    <key>RunAtLoad</key>
+    <true />
+
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/%user%/.local/cron/%app_id%.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/%user%/.local/cron/%app_id%.err.log</string>
+  </dict>
+</plist>
