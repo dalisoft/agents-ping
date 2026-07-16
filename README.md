@@ -8,7 +8,7 @@ Pings your AI Agents each hour to keep your 5-hour active all the time.
 
 - Simple, fast and easy
 - Call via `command` (safe)
-- No ban & block risk
+- Uses Agent CLI invocations
 - Customizable (see `build/` folder)
 
 ## Supported Agents
