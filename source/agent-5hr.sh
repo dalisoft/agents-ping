@@ -37,6 +37,13 @@ run_ping() {
 
 log "Starting agent pings"
 
+# Antigravity trigger 5-hour
+run_ping "Antigravity" \
+  agy \
+  --model 'Gemini 3.5 Flash (Low)' \
+  --mode plan \
+  --print "$MESSAGE"
+
 # Codex trigger 5-hour
 run_ping "Codex" \
   codex \
