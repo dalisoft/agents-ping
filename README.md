@@ -1,6 +1,6 @@
 # Agents Ping
 
-Agents ping cron task for macOS.
+A launchd-based hourly AI-agent pinger for macOS.
 
 Pings your AI Agents each hour to keep your 5-hour active all the time.
 
