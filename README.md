@@ -11,6 +11,11 @@ Pings your AI Agents each hour to keep your 5-hour active all the time.
 - Uses Agent CLI invocations
 - Customizable (see `build/` folder)
 
+## Limitations
+
+- Automatic calling supports only on macOS
+- Manually running `agent-5hr.sh` works across all OS
+
 ## Supported Agents
 
 Currently supports these agents
