@@ -19,6 +19,7 @@ Currently supports these agents
 - Claude Code
 - Codex
 - Command Code
+- Grok
 - OpenCode
 
 ## Installation

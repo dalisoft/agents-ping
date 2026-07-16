@@ -75,6 +75,15 @@ run_ping "CommandCode" \
   --add-dir "$ACTIVE_DIR" \
   --print "$MESSAGE"
 
+# Grok trigger 5-hour
+run_ping "Grok" \
+  grok \
+  --model "grok-4.5" \
+  --effort "low" \
+  --permission-mode plan \
+  --cwd "$ACTIVE_DIR" \
+  --single "$MESSAGE"
+
 # OpenCode trigger 5-hour
 run_ping "OpenCode" \
   opencode run \
